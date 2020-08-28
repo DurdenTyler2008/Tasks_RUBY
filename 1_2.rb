@@ -4,9 +4,10 @@
 =end
 
 puts "Введите основание треугольника:"
-var_a = gets.chomp.to_i
+a = gets.chomp.to_f
 
 puts "Введите высоту треугольника:"
-var_h = gets.chomp.to_i
+h = gets.chomp.to_f
 
-puts "Площадь треугольника составляет:", 0.5*var_a*var_h
+puts "Площадь треугольника составляет:", 0.5 * a * h
+

@@ -8,24 +8,23 @@
 =end
 
 puts "Введите 1й коэффициент(не 0):"
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 
 puts "Введите 2й коэффициент:"
-b = gets.chomp.to_i 
+b = gets.chomp.to_f
 
 puts "Введите 3й коэффициент:"
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
-D = b**2 - 4*a*c
-#x1 = (-b + Math.sqrt(D))/2*a
-#x2 = (-b - Math.sqrt(D))/2*a
+D = b**2 - 4 * a * c
+D_square_root = Math.sqrt(D)
 
 if D > 0
-  x1 = (-b + Math.sqrt(D))/2*a
-  x2 = (-b - Math.sqrt(D))/2*a
+  x1 = (-b + D_square_root) / 2 * a
+  x2 = (-b - D_square_root) / 2 * a
   puts "Дискриминaнт: #{D}, 1й корень: #{x1}, 2й корень: #{x2}"
 elsif D == 0
-  x1 = (-b + Math.sqrt(D))/2*a
+  x1 = -b / 2 * a
   puts "Дискриминaнт: #{D},корень: #{x1} "
   
 else

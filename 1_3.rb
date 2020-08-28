@@ -7,24 +7,24 @@
 =end
 
 puts "Введите 1ю сторону треугольника:"
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 
 puts "Введите 2ю сторону треугольника:"
-b = gets.chomp.to_i 
+b = gets.chomp.to_f
 
 puts "Введите 3ю сторону треугольника:"
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
-mas = [a,b,c]
-mas2 = mas.sort
-gipotenuza = mas2[2]
-side1 = mas2[0]
-side2 = mas2[1]
+array_input = [a,b,c]
+array_sort = array_input.sort
+hypotenuse = array_sort[2]
+side1 = array_sort[0]
+side2 = array_sort[1]
 
-if gipotenuza**2 == side1**2 + side2**2
-  puts "Этот треугольник прямоугольный "
-elsif gipotenuza == side1 && gipotenuza == side2 && side1 == side2
-  puts "Этот ореугольник равнобедренный и равносторонний"  
+if hypotenuse**2 == side1**2 + side2**2
+  puts "Этот треугольник прямоугольный"
+elsif hypotenuse == side1 && hypotenuse == side2 && side1 == side2
+  puts "Этот треугольник равнобедренный и равносторонний"  
 elsif side1 == side2
   puts "Этот треугольник равносторонний"  
 else
