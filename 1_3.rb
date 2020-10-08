@@ -28,5 +28,6 @@ elsif hypotenuse == side1 && hypotenuse == side2 && side1 == side2
 elsif side1 == side2
   puts "Этот треугольник равносторонний"  
 else
-  puts "Этот треугольник обычный"   
+  puts "Этот треугольник обычный" 
+  
 end
