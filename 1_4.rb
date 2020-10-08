@@ -29,5 +29,4 @@ elsif D == 0
   
 else
   puts "Корней нет"
-  
 end
