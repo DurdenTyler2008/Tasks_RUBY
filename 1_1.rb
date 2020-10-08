@@ -16,6 +16,7 @@ if result >= 0
   puts "#{name}, ваш идеальный вес составляет #{result} кг."  
 else
   puts "#{name}, ваш вес уже оптимальный"
+  
 end
 
 
